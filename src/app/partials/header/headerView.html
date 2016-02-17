@@ -1,7 +1,7 @@
 <div id="collapsed-header" ng-show="header.showCollapsed" ng-click="header.showCollapsed = false">
   <img src="/assets/images/core/close-icon-light.png" alt="Close icon" title="Close menu" id="nav-close" />
   <ul id="collapsed-nav">
-    <li ng-repeat="(item, link) in navItems"><a href="{{ link }}">{{ item }}</a></li>
+    <li ng-repeat="item in navItems"><a href="{{ item.url }}" target="{{ item.newtab ? '_blank' : '_self' }}">{{ item.title }}</a></li>
   </ul>
 </div>
 
@@ -12,7 +12,7 @@
       <img id="nav-logo-small" src="/assets/images/core/logo-small-light.png" alt="CSS Bristol logo" />
     </a>
     <ul id="nav-links" class="clear">
-      <li ng-repeat="(item, link) in navItems"><a href="{{ link }}">{{ item }}</a></li>
+      <li ng-repeat="item in navItems"><a href="{{ item.url }}" target="{{ item.newtab ? '_blank' : '_self' }}">{{ item.title }}</a></li>
       <li id="nav-open" ng-click="header.showCollapsed = true" ng-show="!header.showCollapsed"><img src="/assets/images/core/menu-icon-light.png" alt="Menu icon" title="Open menu" /></li>
     </ul>
   </div>
@@ -32,7 +32,7 @@
       <img id="nav-logo-small" src="/assets/images/core/logo-small-light.png" alt="CSS Bristol logo" />
     </a>
     <ul id="nav-links" class="clear">
-      <li ng-repeat="(item, link) in navItems"><a href="{{ link }}">{{ item }}</a></li>
+      <li ng-repeat="item in navItems"><a href="{{ item.url }}" target="{{ item.newtab ? '_blank' : '_self' }}">{{ item.title }}</a></li>
       <li id="nav-open" ng-click="header.showCollapsed = true" ng-show="!header.showCollapsed"><img src="/assets/images/core/menu-icon-light.png" alt="Menu icon" title="Open menu" /></li>
     </ul>
   </div>

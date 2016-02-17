@@ -10,12 +10,36 @@ cssApp.controller('appController', ['$scope', '$route', '$location', function ($
   });
   
   // Set nav items
-  $scope.navItems = {
-    'About': '/about',
-    'Events': '#',
-    'Jobs': '/jobs',
-    'Wellbeing': '/wellbeing',
-    'Tutorials': '#',
-    'Blog': '#'
-  };
+  $scope.navItems = [
+    {
+      'title': 'About',
+      'url': '/about',
+      'newtab': false
+    },
+    {
+      'title': 'Events',
+      'url': 'http://bit.ly/1ihz2k9',
+      'newtab': true
+    },
+    {
+      'title': 'Jobs',
+      'url': '/jobs',
+      'newtab': false
+    },
+    {
+      'title': 'Wellbeing',
+      'url': '/wellbeing',
+      'newtab': false
+    },
+    {
+      'title': 'Tutorials',
+      'url': '#',
+      'newtab': false
+    },
+    {
+      'title': 'Blog',
+      'url': '#',
+      'newtab': false
+    }
+  ];
 }]);
