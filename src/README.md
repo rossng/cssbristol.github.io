@@ -26,7 +26,7 @@ Coming soon!
 
 ## Contributors
 
-Currently, all code was handcrafted with <3 and is maintained by the current CSS webmaster, [Julian Laval](https://github.com/JulianLaval).
+Currently, all code was handcrafted with <3 and is maintained by the current CSS webmaster, [Julian Laval](https://github.com/JulianLaval), with additional contributions by [Ben Marshall](https://github.com/ben-marshall).
 
 ## To-do
 
