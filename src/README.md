@@ -30,11 +30,10 @@ Currently, all code was handcrafted with <3 and is maintained by the current CSS
 
 ## To-do
 
-- Optimise SEO via HTML snapshots of pages
+- Finish individual job pages
+- Finish tutorial section
+- Finish blog section
 - Add pagination to job offers, tutorials & blogs
-- Finalise support page
-- Add site notice if JS disabled
-- Fix Page Insights
 
 ## License
 
