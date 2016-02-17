@@ -14,7 +14,7 @@ cssApp.controller('appController', ['$scope', '$route', '$location', function ($
     'About': '/about',
     'Events': '#',
     'Jobs': '/jobs',
-    'Support': '/support',
+    'Wellbeing': '/wellbeing',
     'Tutorials': '#',
     'Blog': '#'
   };

@@ -27,6 +27,40 @@
   }
 }
 
+.section-subtitle {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.text-section {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  a {
+    color: @blue;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+    &:hover {
+      border-bottom: 2px solid @blue;
+    }
+  }
+  ul {
+    list-style-type: none;
+    & > li {
+      list-style: none;
+      margin-left: 0px;
+      &:before {
+        display: inline-block;
+        content: "-";
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+}
+
 /* Featured section styles */
 
 .feat-col {
@@ -198,19 +232,8 @@
 /* Intro section styles */
 
 #intro-section {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 300;
   padding-bottom: 100px;
-  a {
-    color: @blue;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .2s;
-    &:hover {
-      border-bottom: 2px solid @blue;
-    }
-  }
+  text-align: center;
 }
 
 /* Committee section styles */
@@ -421,3 +444,37 @@
     background-image: url('/assets/images/core/jobs/tag-icon.png');
   }
 }
+
+/* Support section styles
+
+.support-list-element{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid silver;
+    padding: 20px;
+}
+
+.support-list-title{
+    font-weight: bold;
+    margin: 3px;
+}
+
+.support-list-content{
+    padding: 2px;
+}
+
+.support-use-case-list{
+    margin: 3px;
+    padding: 3px;
+}
+
+.support-use-case-list div{
+    font-size: small;
+    padding: 2px;
+    color: grey;
+    background-color: lightgreen;
+    display: inline-block;
+    margin: 2px;
+}
+ */

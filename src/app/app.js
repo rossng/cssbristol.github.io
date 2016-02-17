@@ -16,9 +16,9 @@ cssApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, 
       templateUrl: '/app/components/about/aboutView.html',
       title: 'About Us'
     })
-    .when('/support', {
-      templateUrl: '/app/components/support/supportView.html',
-      title: 'Support'
+    .when('/wellbeing', {
+      templateUrl: '/app/components/wellbeing/wellbeingView.html',
+      title: 'Wellbeing'
     })
     .when('/jobs', {
       templateUrl: '/app/components/jobs/jobView.html',

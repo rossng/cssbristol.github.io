@@ -347,7 +347,7 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', ['serve']);
 
   grunt.registerTask('deploy', ['buildcontrol:pages']);
 };
