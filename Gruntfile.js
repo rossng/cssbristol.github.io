@@ -241,6 +241,7 @@ module.exports = function (grunt) {
             'assets/images/**/*.webp',
             '**/*.html',
             '*.md',
+            'CNAME',
             'assets/fonts/**/*.*'
           ]
         }]
