@@ -68,12 +68,6 @@ module.exports = function (grunt) {
             ]
           }
         }
-      },
-      dist: {
-        options: {
-          background: false,
-          server: '<%= config.dist %>'
-        }
       }
     },
 
@@ -311,9 +305,9 @@ module.exports = function (grunt) {
 
   grunt.registerTask('serve', 'Start the server and preview app', function (target) {
 
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'browserSync:dist']);
-    }
+    // if (target === 'dist') {
+    //   return grunt.task.run(['build', 'browserSync:dist']);
+    // }
 
     grunt.task.run([
       'clean:server',
