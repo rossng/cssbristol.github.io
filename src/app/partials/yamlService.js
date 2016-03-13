@@ -15,6 +15,9 @@ cssApp.factory('yamlService', ['$http', '$filter', function ($http, $filter) {
     else if (type === 'jobs') {
       return 'allJobs.json';
     }
+    else if (type === 'tutorials') {
+      return 'allTutorials.json';
+    }
 
     return '';
   };
@@ -25,7 +28,10 @@ cssApp.factory('yamlService', ['$http', '$filter', function ($http, $filter) {
     'Year 2': { abbr: 'yr2', tag: 'Yr 2' },
     'Year 3': { abbr: 'yr3', tag: 'Yr 3' },
     'Year 4': { abbr: 'yr4', tag: 'Yr 4' },
-    'Postgrad': { abbr: 'pg', tag: 'Postgrad' }
+    'Postgrad': { abbr: 'pg', tag: 'Postgrad' },
+    'UoB IT': { abbr: 'it', tag: 'UoB IT' },
+    'Tools': { abbr: 'tools', tag: 'Tools' },
+    'Year 4': { abbr: 'yr4', tag: 'Yr 4' }
   };
 
   var parseData = function (type, data) {
@@ -68,7 +74,7 @@ cssApp.factory('yamlService', ['$http', '$filter', function ($http, $filter) {
 
   // Public fetch method
   var fetch = function (type) {
-    
+
     var fileName = '/data/dist/' + getFileName(type);
 
     return $http.get(fileName).then(function (response) {

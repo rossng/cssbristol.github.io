@@ -8,7 +8,7 @@ cssApp.controller('appController', ['$scope', '$route', '$location', function ($
   $scope.$on('$routeChangeSuccess', function ($currentRoute, $previousRoute) {
     $scope.currentPage = $route.current.title;
   });
-  
+
   // Set nav items
   $scope.navItems = [
     {
@@ -33,7 +33,7 @@ cssApp.controller('appController', ['$scope', '$route', '$location', function ($
     },
     {
       'title': 'Tutorials',
-      'url': '#',
+      'url': '/tutorials',
       'newtab': false
     },
     {

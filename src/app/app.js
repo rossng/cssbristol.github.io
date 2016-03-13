@@ -20,6 +20,12 @@ cssApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, 
       templateUrl: '/app/components/wellbeing/wellbeingView.html',
       title: 'Wellbeing'
     })
+    .when('/tutorials', {
+      templateUrl: '/app/components/tutorials/tutorialsView.html',
+      title: 'Tutorials',
+      controller: 'tutorialsController',
+      controllerAs: 'tutorials'
+    })
     .when('/jobs', {
       templateUrl: '/app/components/jobs/jobView.html',
       title: 'Job Openings',

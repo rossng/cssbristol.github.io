@@ -274,7 +274,7 @@ module.exports = function (grunt) {
       }
     }
   });
-  
+
   grunt.registerTask('dumpDir', 'Dump directory to json', function (target) {
 
     target = target === undefined ? 'all' : target;
@@ -294,13 +294,26 @@ module.exports = function (grunt) {
 
       cwd = config.app + '/data/src/jobs/';
       var files = grunt.file.expand({ cwd: cwd }, '*.yaml');
-      
+
       var dump = {};
       for (var i = 0; i < files.length; i++) {
         dump[files[i]] = grunt.file.readYAML(cwd + files[i]);
       }
 
       grunt.file.write(config.app + '/data/dist/allJobs.json', JSON.stringify(dump));
+    }
+
+    if (target === 'tutorials' || target === 'all') {
+
+      cwd = config.app + '/data/src/tutorials/';
+      var files = grunt.file.expand({ cwd: cwd }, '*.yaml');
+      
+      var dump = {};
+      for (var i = 0; i < files.length; i++) {
+        dump[files[i]] = grunt.file.readYAML(cwd + files[i]);
+      }
+
+      grunt.file.write(config.app + '/data/dist/allTutorials.json', JSON.stringify(dump));
     }
   });
 

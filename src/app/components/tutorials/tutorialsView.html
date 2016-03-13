@@ -1,0 +1,54 @@
+<!--
+
+###
+# Rationale behind this page
+###
+
+To provide guides that are useful for UoB CS students
+
+Key Considerations:
+- Include content that pertains specifically to the UoB CS course - Snowy, IT Services quirks/features, custom COMS12200 hardware etc.
+- Don't write lengthy tutorials on generic topics - other people will have done it better. Maybe link to them?
+
+-->
+
+<div class="section gradient-up text-section" id="intro-section">
+  <div class="inner-section">
+    <div class="section-title">Tutorials</div>
+    <div class="section-content clear">
+      <p>
+        This section is here to provide tips and tutorials that are especially relevant to students on the University of Bristol CS course. Have some content you want to share? <a href="https://github.com/cssbristol/cssbristol.github.io">Make a pull request</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section text-section">
+  <div class="inner-section">
+    <div class="section-title"></div>
+    <div class="section-content clear">
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div isotope-wrapper isotope-container="#tutorials-section .section-content" isotope-selector=".tutorial-item">
+
+<div class="section" id="tutorials-section">
+  <div class="inner-section">
+    <div class="section-content clear">
+
+      <a ng-repeat="tutorial in tutorials.tutorialList" class="tutorial-item {{ :: tutorial.tags.join(' ') }}" href="#" data-tutorial-created="{{ :: tutorial.date }}" event-on-finish="isotopeReady">
+        <div class="tutorial-thumbnail">
+          <img ng-src="/assets/images/contrib/tutorials/{{ :: tutorial.thumbnail }}" alt="{{ :: tutorial.name }}" />
+        </div>
+        <div class="tutorial-name">{{ :: tutorial.name }}</div>
+        <div>{{ :: tutorial.summary }}</div>
+        <div class="tutorial-date tutorial-meta" title="Date Posted">{{ :: tutorial.date | date: 'MMM d, h:mma' }}</div>
+        <div class="tutorial-tags tutorial-meta" title="Tags"><span ng-repeat="tag in tutorial.tags">{{ :: tag }}</span></div>
+      </a>
+
+    </div>
+  </div>
+</div>
